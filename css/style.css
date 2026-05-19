@@ -5,6 +5,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap');
 
+/* styles.css */
+
+@font-face {
+    font-family: 'Barabara';
+    src: url('../fonts/barabara-final.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* ============================================================
    CSS VARIABLES
    ============================================================ */
@@ -30,7 +39,7 @@
     --shadow-md:     0 8px 32px rgba(40,104,185,0.18);
     --shadow-lg:     0 16px 48px rgba(40,104,185,0.22);
     --transition:    0.3s ease;
-    --font-heading:  'Poppins', Georgia, serif;
+    --font-heading:  'Barabara','Poppins', Georgia, serif;
     --font-body:     'Poppins', 'Open Sans', sans-serif;
 }
 
@@ -51,6 +60,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
 }
 
 img { max-width: 100%; }
