@@ -30,19 +30,26 @@
 <!-- HERO -->
 <header class="hero-section" id="home">
     <canvas id="particle-canvas"></canvas>
-    <img src="images/header.jpg" alt="Palawan" class="hero-img hero-img-parallax">
-    <div class="hero-overlay" style="z-index:3;">
-        <span class="hero-slogan">Love the Philippines · Discover Palawan</span>
-        <h1>Discover Palawan</h1>
-        <p class="hero-subtitle"><em>Every island, an adventure — the last frontier of the Philippines awaits.</em></p>
-        <div class="hero-btns d-flex flex-wrap justify-content-center gap-3">
-            <a href="destinations.html" class="btn btn-primary btn-lg">Explore Destinations</a>
-            <a href="plan-your-trip.html" class="btn btn-outline-light btn-lg">Plan Your Trip</a>
-        </div>
+    <div class="hero-slides hero-img-parallax" aria-hidden="true">
+        <img src="images/header.jpg" alt="" class="hero-img hero-slide active">
+        <img src="images/el_nido.jpg" alt="" class="hero-img hero-slide">
+        <img src="images/coron.avif" alt="" class="hero-img hero-slide">
     </div>
-    <div class="scroll-indicator" style="z-index:3;">
-        <span>Scroll</span>
-        <i class="bi bi-chevron-double-down"></i>
+    <div class="hero-slide-dots" aria-label="Hero image slides">
+        <button class="active" type="button" aria-label="Show Palawan aerial slide" data-slide="0"></button>
+        <button type="button" aria-label="Show El Nido slide" data-slide="1"></button>
+        <button type="button" aria-label="Show Coron slide" data-slide="2"></button>
+    </div>
+    <div class="hero-overlay">
+        <div class="hero-campaign">
+            <span class="hero-slogan">Love the Philippines · Discover Palawan</span>
+            <h1>Discover Palawan</h1>
+        <p class="hero-subtitle"><em>Every island, an adventure — the last frontier of the Philippines awaits.</em></p>
+            <div class="hero-btns d-flex flex-wrap justify-content-center gap-3">
+                <a href="destinations.html" class="btn btn-primary btn-lg">Explore Destinations</a>
+                <a href="plan-your-trip.html" class="btn btn-outline-light btn-lg">Plan Your Trip</a>
+            </div>
+        </div>
     </div>
 </header>
 
@@ -255,19 +262,42 @@
 
 <!-- VIDEO SECTION -->
 <section class="video-section">
-    <div class="container">
-        <h2 class="section-title slide-up">Experience Palawan</h2>
-        <p class="section-intro slide-up delay-1">Watch moments from the destinations waiting for your adventure.</p>
-        <div class="video-wrapper px-3 px-lg-0">
-            <iframe class="main-video" src="https://www.youtube.com/embed/bmHrdsNvsYY"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <div class="video-thumbs">
-                <a href="https://www.youtube.com/watch?v=pHFEgAgs-N8" target="_blank"><img src="images/el_nido.jpg" alt="El Nido video"></a>
-                <a href="https://www.youtube.com/watch?v=3ViuVJqPmMs" target="_blank"><img src="images/coron.avif" alt="Coron video"></a>
-                <a href="https://www.youtube.com/watch?v=Q0EGsMvFUgE" target="_blank"><img src="images/puerto_princesa.webp" alt="Puerto Princesa video"></a>
-                <a href="https://www.youtube.com/watch?v=eLmkQ7n8V2U" target="_blank"><img src="images/island_hopping.jpg" alt="Island hopping video"></a>
-                <a href="https://www.youtube.com/watch?v=XGZk4OUhF-Q" target="_blank"><img src="images/san_vicente.jpg" alt="San Vicente video"></a>
-            </div>
+    <video class="video-bg" autoplay muted loop playsinline poster="images/header.jpg">
+        <source src="videos/home_video.mp4" type="video/mp4">
+        <source src="videos/home_video.webm" type="video/webm">
+        <source src="videos/home_video.mov" type="video/quicktime">
+    </video>
+    <div class="video-bg-overlay"></div>
+    <div class="video-content">
+        <div class="video-copy">
+            <h2 class="section-title slide-up">Experience Palawan</h2>
+            <p class="video-description slide-up delay-1">Watch moments from the destinations waiting for your adventure, from limestone lagoons and island-hopping routes to coral gardens, coastal towns, and quiet beaches.</p>
+            <a href="https://www.youtube.com/watch?v=bmHrdsNvsYY" target="_blank" class="video-watch slide-up delay-2">
+                <i class="bi bi-play-circle-fill"></i>
+                <span>Watch Now</span>
+            </a>
+        </div>
+        <div class="video-thumbs" aria-label="Featured Palawan videos">
+            <a href="https://www.youtube.com/watch?v=bmHrdsNvsYY" target="_blank" class="video-thumb-card">
+                <img src="images/header.jpg" alt="Experience Palawan video">
+                <span><i class="bi bi-play-circle-fill"></i> Experience Palawan</span>
+            </a>
+            <a href="https://www.youtube.com/watch?v=pHFEgAgs-N8" target="_blank" class="video-thumb-card">
+                <img src="images/el_nido.jpg" alt="El Nido video">
+                <span><i class="bi bi-play-circle-fill"></i> El Nido Lagoons</span>
+            </a>
+            <a href="https://www.youtube.com/watch?v=3ViuVJqPmMs" target="_blank" class="video-thumb-card">
+                <img src="images/coron.avif" alt="Coron video">
+                <span><i class="bi bi-play-circle-fill"></i> Coron Island Views</span>
+            </a>
+            <a href="https://www.youtube.com/watch?v=Q0EGsMvFUgE" target="_blank" class="video-thumb-card">
+                <img src="images/puerto_princesa.webp" alt="Puerto Princesa video">
+                <span><i class="bi bi-play-circle-fill"></i> Puerto Princesa</span>
+            </a>
+            <a href="https://www.youtube.com/watch?v=eLmkQ7n8V2U" target="_blank" class="video-thumb-card">
+                <img src="images/island_hopping.jpg" alt="Island hopping video">
+                <span><i class="bi bi-play-circle-fill"></i> Island Hopping</span>
+            </a>
         </div>
     </div>
 </section>

@@ -120,6 +120,38 @@ function initParallax() {
 }
 
 // ============================================================
+// HERO IMAGE SLIDER
+// ============================================================
+function initHeroSlider() {
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.hero-slide-dots button');
+    if (!slides.length || !dots.length) return;
+
+    let activeIndex = 0;
+    let timer;
+
+    function showSlide(index) {
+        activeIndex = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => slide.classList.toggle('active', i === activeIndex));
+        dots.forEach((dot, i) => dot.classList.toggle('active', i === activeIndex));
+    }
+
+    function startSlider() {
+        timer = window.setInterval(() => showSlide(activeIndex + 1), 5200);
+    }
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            window.clearInterval(timer);
+            showSlide(index);
+            startSlider();
+        });
+    });
+
+    startSlider();
+}
+
+// ============================================================
 // FLOATING PARTICLES (hero canvas)
 // ============================================================
 function initParticles() {
@@ -571,6 +603,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initCounters();
     initCardTilt();
     initParallax();
+    initHeroSlider();
     initParticles();
     initGalleryLightbox();
     initFormValidation();
