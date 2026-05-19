@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Discover Palawan — Every island, an adventure. The last frontier of the Philippines.">
+    <title>Home — Discover Palawan</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+<!-- Scroll Progress -->
+<div id="scroll-progress"></div>
+
+<!-- Loading Screen -->
+<div id="page-loader">
+    <div class="loader-logo"></div>
+    <div class="loader-text">Loading Palawan...</div>
+</div>
+
+<!-- Navbar -->
+<div id="navbar-placeholder"></div>
+
+<!-- HERO -->
+<header class="hero-section" id="home">
+    <canvas id="particle-canvas"></canvas>
+    <img src="images/header.jpg" alt="Palawan" class="hero-img hero-img-parallax">
+    <div class="hero-overlay" style="z-index:3;">
+        <span class="hero-slogan">Love the Philippines · Discover Palawan</span>
+        <h1>Discover Palawan</h1>
+        <p class="hero-subtitle"><em>Every island, an adventure — the last frontier of the Philippines awaits.</em></p>
+        <div class="hero-btns d-flex flex-wrap justify-content-center gap-3">
+            <a href="destinations.html" class="btn btn-primary btn-lg">Explore Destinations</a>
+            <a href="plan-your-trip.html" class="btn btn-outline-light btn-lg">Plan Your Trip</a>
+        </div>
+    </div>
+    <div class="scroll-indicator" style="z-index:3;">
+        <span>Scroll</span>
+        <i class="bi bi-chevron-double-down"></i>
+    </div>
+</header>
+
+<div class="pattern-banner"></div>
+
+<!-- STATS -->
+<section class="stats-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-6 col-md-3 stat-item fade-in">
+                <div class="stat-number"><span class="counter" data-target="1700" data-suffix="+">0</span></div>
+                <div class="stat-label">Islands &amp; Islets</div>
+            </div>
+            <div class="col-6 col-md-3 stat-item fade-in delay-1">
+                <div class="stat-number"><span class="counter" data-target="44" data-suffix="%">0</span></div>
+                <div class="stat-label">Rainforest Coverage</div>
+            </div>
+            <div class="col-6 col-md-3 stat-item fade-in delay-2">
+                <div class="stat-number"><span class="counter" data-target="2" data-suffix="">0</span></div>
+                <div class="stat-label">UNESCO World Heritage Sites</div>
+            </div>
+            <div class="col-6 col-md-3 stat-item fade-in delay-3">
+                <div class="stat-number"><span class="counter" data-target="7" data-suffix="">0</span></div>
+                <div class="stat-label">New Wonders of Nature</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WELCOME -->
+<section class="py-5" id="welcome">
+    <div class="container py-3">
+        <h2 class="section-title slide-up">Welcome to Palawan</h2>
+        <p class="section-intro slide-up delay-1">Palawan is a long, narrow island province in the southwestern Philippines, stretching between the South China Sea and the Sulu Sea. Celebrated as one of the most beautiful islands on Earth, it is a place of extraordinary natural diversity.</p>
+        <p class="section-intro slide-up delay-2">Whether you seek adventure on the water, peace in a secluded cove, or a deep connection with indigenous culture, Palawan delivers it all with breathtaking generosity.</p>
+    </div>
+</section>
+
+<!-- KNOWN ATTRACTIONS -->
+<section class="attractions-section bg-sand">
+    <div class="container">
+        <h2 class="section-title slide-up">Known Attractions</h2>
+        <p class="section-intro slide-up delay-1">Five iconic wonders that define Palawan's legendary status.</p>
+        <div class="row g-4">
+            <div class="col-sm-6 col-lg-4 fade-in">
+                <div class="attraction-carousel-card tilt-card">
+                    <div class="ac-img"><img src="images/el_nido.jpg" alt="Big Lagoon El Nido" loading="lazy"><span class="ac-tag">Island · El Nido</span></div>
+                    <div class="ac-body">
+                        <h3>Big Lagoon, El Nido</h3>
+                        <p>A breathtaking emerald lagoon enclosed by towering limestone cliffs — accessible only by kayak through a narrow channel.</p>
+                        <a href="destinations.html" class="btn btn-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 fade-in delay-1">
+                <div class="attraction-carousel-card tilt-card">
+                    <div class="ac-img"><img src="images/coron.avif" alt="Kayangan Lake Coron" loading="lazy"><span class="ac-tag">Lake · Coron</span></div>
+                    <div class="ac-body">
+                        <h3>Kayangan Lake, Coron</h3>
+                        <p>Declared the cleanest lake in Asia — crystal-clear thermocline waters inside a dramatic karst limestone bowl.</p>
+                        <a href="destinations.html" class="btn btn-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 fade-in delay-2">
+                <div class="attraction-carousel-card tilt-card">
+                    <div class="ac-img"><img src="images/puerto_princesa.webp" alt="Underground River" loading="lazy"><span class="ac-tag">Adventure · Puerto Princesa</span></div>
+                    <div class="ac-body">
+                        <h3>Underground River</h3>
+                        <p>A UNESCO World Heritage Site and New 7 Wonder of Nature — the world's longest navigable underground river.</p>
+                        <a href="destinations.html" class="btn btn-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-6 fade-in delay-1">
+                <div class="attraction-carousel-card tilt-card">
+                    <div class="ac-img"><img src="images/taytay.webp" alt="Fort Santa Isabel Taytay" loading="lazy"><span class="ac-tag">Historical Site · Taytay</span></div>
+                    <div class="ac-body">
+                        <h3>Fort Santa Isabel, Taytay</h3>
+                        <p>A 17th-century Spanish colonial fort overlooking Taytay Bay — one of Palawan's most significant historical landmarks.</p>
+                        <a href="destinations.html" class="btn btn-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-6 fade-in delay-2">
+                <div class="attraction-carousel-card tilt-card">
+                    <div class="ac-img"><img src="images/san_vicente.jpg" alt="Long Beach San Vicente" loading="lazy"><span class="ac-tag">Beach · San Vicente</span></div>
+                    <div class="ac-body">
+                        <h3>Long Beach, San Vicente</h3>
+                        <p>The longest beach in the Philippines at 14.7 km — an unspoiled stretch of white sand and turquoise sea.</p>
+                        <a href="destinations.html" class="btn btn-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURED GRID -->
+<section class="py-5" id="featured">
+    <div class="container py-3">
+        <h2 class="section-title slide-up">Your Next Discovery</h2>
+        <p class="section-intro slide-up delay-1">Explore the destinations that make Palawan unforgettable.</p>
+        <div class="featured-grid">
+            <a href="destinations.html" class="feat-card big">
+                <img src="images/el_nido.jpg" alt="El Nido">
+                <div class="card-text"><h3>El Nido</h3><span>Limestone cliffs &amp; hidden lagoons</span></div>
+            </a>
+            <a href="destinations.html" class="feat-card medium v1">
+                <img src="images/coron.avif" alt="Coron">
+                <div class="card-text"><h3>Coron</h3></div>
+            </a>
+            <a href="destinations.html" class="feat-card medium v2">
+                <img src="images/san_vicente.jpg" alt="San Vicente">
+                <div class="card-text"><h3>San Vicente</h3></div>
+            </a>
+            <a href="destinations.html" class="feat-card horizontal h1">
+                <img src="images/puerto_princesa.webp" alt="Puerto Princesa">
+                <div class="card-text"><h3>Puerto Princesa</h3><span>Gateway city &amp; Underground River</span></div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- WHY PALAWAN -->
+<section class="py-5 bg-sand" id="highlights">
+    <div class="container py-3">
+        <h2 class="section-title slide-up">Why Palawan?</h2>
+        <p class="section-intro slide-up delay-1">A world of wonders compressed into one extraordinary province.</p>
+        <div class="row g-4">
+            <div class="col-sm-6 col-lg-3 fade-in"><div class="highlight-card"><img src="images/island.jpg" alt="Pristine Islands" loading="lazy"><div class="hc-body"><h3>Pristine Islands</h3><p>Over 1,700 islands, islets, and cays — each with its own character, secret cove, and shade of turquoise.</p></div></div></div>
+            <div class="col-sm-6 col-lg-3 fade-in delay-1"><div class="highlight-card"><img src="images/diving.webp" alt="World-Class Diving" loading="lazy"><div class="hc-body"><h3>World-Class Diving</h3><p>Tubbataha Reef, Coron's WWII wrecks, and El Nido's coral gardens rank among Asia's finest dive sites.</p></div></div></div>
+            <div class="col-sm-6 col-lg-3 fade-in delay-2"><div class="highlight-card"><img src="images/rainforest.jpg" alt="Living Rainforest" loading="lazy"><div class="hc-body"><h3>Living Rainforest</h3><p>Palawan's forests shelter unique wildlife found nowhere else on Earth, including the rare Palawan bearcat.</p></div></div></div>
+            <div class="col-sm-6 col-lg-3 fade-in delay-3"><div class="highlight-card"><img src="images/culture.jpg" alt="Rich Culture" loading="lazy"><div class="hc-body"><h3>Rich Culture</h3><p>The indigenous Batak, Tagbanua, and Palaw'an peoples preserve traditions stretching back thousands of years.</p></div></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- ACTIVITIES -->
+<section class="py-5" id="activities">
+    <div class="container py-3">
+        <h2 class="section-title slide-up">Things to Do</h2>
+        <p class="section-intro slide-up delay-1">Adventures for every kind of traveller.</p>
+        <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg fade-in"><a href="destinations.html?filter=Adventure" class="activity-card"><img src="images/island_hopping.jpg" alt="Island Hopping" loading="lazy"><div class="ac-body"><h3>Island Hopping</h3><p>Sail between emerald lagoons and secret beaches on a traditional banca boat.</p></div></a></div>
+            <div class="col-6 col-md-4 col-lg fade-in delay-1"><a href="destinations.html?filter=Adventure" class="activity-card"><img src="images/diving.avif" alt="Snorkeling &amp; Diving" loading="lazy"><div class="ac-body"><h3>Snorkeling &amp; Diving</h3><p>Discover vibrant reefs, WWII shipwrecks, and extraordinary marine life.</p></div></a></div>
+            <div class="col-6 col-md-4 col-lg fade-in delay-2"><a href="destinations.html?filter=Adventure" class="activity-card"><img src="images/kayaking.webp" alt="Kayaking" loading="lazy"><div class="ac-body"><h3>Kayaking</h3><p>Paddle through mangroves, sea caves, and coastal lagoons at your own pace.</p></div></a></div>
+            <div class="col-6 col-md-4 col-lg fade-in delay-3"><a href="destinations.html?filter=Mountain" class="activity-card"><img src="images/hiking.webp" alt="Hiking" loading="lazy"><div class="ac-body"><h3>Hiking</h3><p>Climb through jungle trails with panoramic ocean and island views.</p></div></a></div>
+            <div class="col-6 col-md-4 col-lg fade-in delay-4"><a href="destinations.html?filter=Historical+Site" class="activity-card"><img src="images/cultural_tour.jpg" alt="Cultural Tours" loading="lazy"><div class="ac-body"><h3>Cultural Tours</h3><p>Meet indigenous communities and learn traditions passed down for generations.</p></div></a></div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+    <div class="container">
+        <h2 class="section-title slide-up">Traveller Stories</h2>
+        <p class="section-intro slide-up delay-1">Real experiences from those who've discovered Palawan's magic.</p>
+        <div class="testimonial-slider">
+            <div class="testimonial-slide">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">El Nido took my breath away at every turn. The Big Lagoon is unlike anything I've ever seen — floating inside those limestone walls, I felt like I was in another world entirely.</p>
+                    <img src="images/header.jpg" alt="Maria" class="testimonial-avatar">
+                    <div class="testimonial-author">Maria Santos</div>
+                    <div class="testimonial-origin">Manila, Philippines</div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">Kayangan Lake in Coron exceeded every expectation. The water is so clear you can see 10 metres down. The hike over the cliff to the viewpoint was worth every step.</p>
+                    <img src="images/coron.avif" alt="James" class="testimonial-avatar">
+                    <div class="testimonial-author">James Wickham</div>
+                    <div class="testimonial-origin">Sydney, Australia</div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">The Underground River is genuinely one of the most awe-inspiring natural wonders I've ever visited. No photo or video does it justice. Add it to your bucket list immediately.</p>
+                    <img src="images/puerto_princesa.webp" alt="Sophie" class="testimonial-avatar">
+                    <div class="testimonial-author">Sophie Lefèvre</div>
+                    <div class="testimonial-origin">Paris, France</div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">Long Beach in San Vicente is the most beautiful beach I've ever walked. 14 km of white sand and almost nobody there. Palawan is a treasure that the world is only just discovering.</p>
+                    <img src="images/san_vicente.jpg" alt="Carlos" class="testimonial-avatar">
+                    <div class="testimonial-author">Carlos Mendez</div>
+                    <div class="testimonial-origin">Madrid, Spain</div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <div class="slider-controls">
+                <button class="slider-btn slider-prev"><i class="bi bi-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <div class="testimonial-dot"></div>
+                    <div class="testimonial-dot"></div>
+                    <div class="testimonial-dot"></div>
+                    <div class="testimonial-dot"></div>
+                </div>
+                <button class="slider-btn slider-next"><i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- VIDEO SECTION -->
+<section class="video-section">
+    <div class="container">
+        <h2 class="section-title slide-up">Experience Palawan</h2>
+        <p class="section-intro slide-up delay-1">Watch moments from the destinations waiting for your adventure.</p>
+        <div class="video-wrapper px-3 px-lg-0">
+            <iframe class="main-video" src="https://www.youtube.com/embed/bmHrdsNvsYY"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="video-thumbs">
+                <a href="https://www.youtube.com/watch?v=pHFEgAgs-N8" target="_blank"><img src="images/el_nido.jpg" alt="El Nido video"></a>
+                <a href="https://www.youtube.com/watch?v=3ViuVJqPmMs" target="_blank"><img src="images/coron.avif" alt="Coron video"></a>
+                <a href="https://www.youtube.com/watch?v=Q0EGsMvFUgE" target="_blank"><img src="images/puerto_princesa.webp" alt="Puerto Princesa video"></a>
+                <a href="https://www.youtube.com/watch?v=eLmkQ7n8V2U" target="_blank"><img src="images/island_hopping.jpg" alt="Island hopping video"></a>
+                <a href="https://www.youtube.com/watch?v=XGZk4OUhF-Q" target="_blank"><img src="images/san_vicente.jpg" alt="San Vicente video"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+    <div class="container">
+        <h2 class="section-title white slide-up">Stay in the Loop</h2>
+        <p class="slide-up delay-1">Get Palawan travel tips, festival updates, and destination guides delivered to your inbox.</p>
+        <form class="newsletter-form slide-up delay-2" id="newsletter-form">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit" class="btn btn-sunset">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <div class="container">
+        <h2 class="section-title slide-up">Ready to Explore?</h2>
+        <p class="slide-up delay-1">Plan your journey through Palawan's islands, reefs, and rainforests.</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3 slide-up delay-2">
+            <a href="plan-your-trip.html" class="btn btn-primary btn-lg">Plan Your Trip →</a>
+            <a href="contact.html" class="btn btn-outline-secondary btn-lg">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- Scroll to Top -->
+<button id="scroll-top" title="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Data -->
+<script src="js/data.js"></script>
+<!-- Components -->
+<script src="js/components.js"></script>
+<!-- Main Script -->
+<script src="js/script.js"></script>
+</body>
+</html>
