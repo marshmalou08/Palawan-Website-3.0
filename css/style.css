@@ -1558,6 +1558,18 @@ img { max-width: 100%; }
     border: 5px solid #fff;
     box-shadow: var(--shadow-md);
 }
+.about-map {
+    width: 100%;
+    height: 420px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+.about-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 
 .about-content h2 { font-family: var(--font-heading); color: var(--ocean); font-size: clamp(1.6rem, 3vw, 2.4rem); margin-bottom: 16px; }
 .about-content p { color: var(--muted); line-height: 1.85; margin-bottom: 16px; }
@@ -1756,6 +1768,7 @@ img { max-width: 100%; }
     }
 
     .about-grid { grid-template-columns: 1fr; }
+    .about-map { height: 360px; }
     .about-img-stack .img-inset { display: none; }
 
     #lightbox-prev { left: -50px; }
