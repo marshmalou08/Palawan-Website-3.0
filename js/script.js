@@ -6,9 +6,7 @@
  *          gallery lightbox, form validation
  */
 
-// ============================================================
 // LOADING SCREEN
-// ============================================================
 window.addEventListener('load', function () {
     const loader = document.getElementById('page-loader');
     if (loader) {
@@ -19,9 +17,7 @@ window.addEventListener('load', function () {
     }
 });
 
-// ============================================================
 // SCROLL PROGRESS BAR
-// ============================================================
 function initScrollProgress() {
     const bar = document.getElementById('scroll-progress');
     if (!bar) return;
@@ -32,9 +28,7 @@ function initScrollProgress() {
     });
 }
 
-// ============================================================
 // FADE-IN ON SCROLL (Intersection Observer)
-// ============================================================
 function initScrollFadeIn() {
     const elements = document.querySelectorAll('.fade-in, .slide-up, .slide-left, .slide-right');
     if (!elements.length) return;
@@ -49,9 +43,7 @@ function initScrollFadeIn() {
     elements.forEach(el => observer.observe(el));
 }
 
-// ============================================================
 // ANIMATED COUNTERS
-// ============================================================
 function animateCounter(el) {
     const target = parseInt(el.dataset.target, 10);
     const duration = 2000;
@@ -82,9 +74,7 @@ function initCounters() {
     counters.forEach(c => observer.observe(c));
 }
 
-// ============================================================
 // 3D CARD TILT EFFECT (mousemove)
-// ============================================================
 function initCardTilt() {
     document.querySelectorAll('.tilt-card').forEach(card => {
         card.addEventListener('mousemove', (e) => {
@@ -107,9 +97,7 @@ function initCardTilt() {
     });
 }
 
-// ============================================================
 // PARALLAX HERO
-// ============================================================
 function initParallax() {
     const heroImg = document.querySelector('.hero-img-parallax');
     if (!heroImg) return;
@@ -119,9 +107,8 @@ function initParallax() {
     });
 }
 
-// ============================================================
+
 // HERO IMAGE SLIDER
-// ============================================================
 function initHeroSlider() {
     const slides = document.querySelectorAll('.hero-slide');
     const dots = document.querySelectorAll('.hero-slide-dots button');
@@ -151,9 +138,7 @@ function initHeroSlider() {
     startSlider();
 }
 
-// ============================================================
 // FLOATING PARTICLES (hero canvas)
-// ============================================================
 function initParticles() {
     const canvas = document.getElementById('particle-canvas');
     if (!canvas) return;
@@ -192,9 +177,7 @@ function initParticles() {
     });
 }
 
-// ============================================================
 // DESTINATIONS PAGE — Dynamic Cards, Search, Filter, Modal
-// ============================================================
 function initDestinationsPage() {
     const grid = document.getElementById('destinations-grid');
     if (!grid) return;
@@ -313,9 +296,7 @@ function initDestinationsPage() {
     filterAndSearch();
 }
 
-// ============================================================
 // DESTINATION MODAL
-// ============================================================
 function openDestinationModal(id) {
     const dest = window.DESTINATIONS.find(d => d.id === id);
     if (!dest) return;
@@ -342,9 +323,7 @@ function openDestinationModal(id) {
     bsModal.show();
 }
 
-// ============================================================
 // GALLERY LIGHTBOX
-// ============================================================
 function initGalleryLightbox() {
     const lightbox = document.getElementById('gallery-lightbox');
     if (!lightbox) return;
@@ -483,9 +462,7 @@ function initFormValidation() {
     }
 }
 
-// ============================================================
 // TESTIMONIALS SLIDER
-// ============================================================
 function initTestimonialSlider() {
     const slider = document.querySelector('.testimonial-slider');
     if (!slider) return;
@@ -531,9 +508,7 @@ function initTestimonialSlider() {
     autoPlay();
 }
 
-// ============================================================
 // SMOOTH SCROLL FOR ANCHOR LINKS
-// ============================================================
 function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -548,9 +523,8 @@ function initSmoothScroll() {
     });
 }
 
-// ============================================================
+
 // NAVBAR ACTIVE STATE & SCROLL CLASS
-// ============================================================
 function initNavbar() {
     // Scroll class already handled in components.js
     // Highlight active page
@@ -562,9 +536,7 @@ function initNavbar() {
     });
 }
 
-// ============================================================
 // SCROLL-TO-TOP BUTTON
-// ============================================================
 function initScrollToTop() {
     const btn = document.getElementById('scroll-top');
     if (!btn) return;
@@ -576,9 +548,7 @@ function initScrollToTop() {
     });
 }
 
-// ============================================================
 // NEWSLETTER FORM
-// ============================================================
 function initNewsletter() {
     const form = document.getElementById('newsletter-form');
     if (!form) return;
@@ -594,9 +564,7 @@ function initNewsletter() {
     });
 }
 
-// ============================================================
 // INIT ALL ON DOM READY
-// ============================================================
 document.addEventListener('DOMContentLoaded', function () {
     initScrollProgress();
     initScrollFadeIn();
