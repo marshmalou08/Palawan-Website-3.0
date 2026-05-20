@@ -3,9 +3,7 @@
  * Injects navbar and footer into every page
  */
 
-// ============================================================
 // NAVBAR HTML
-// ============================================================
 function getNavbar(activePage = '') {
     return `
     <nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
@@ -65,9 +63,7 @@ function getNavbar(activePage = '') {
     </nav>`;
 }
 
-// ============================================================
 // FOOTER HTML
-// ============================================================
 function getFooter() {
     return `
     <footer class="page-footer">
@@ -145,9 +141,7 @@ function getFooter() {
     </footer>`;
 }
 
-// ============================================================
 // INJECT ON DOM READY
-// ============================================================
 document.addEventListener('DOMContentLoaded', function () {
     // Get active page from meta tag or body data attribute
     const activePage = document.body.dataset.page || '';
